@@ -8,8 +8,12 @@
 </head>
 
 <style>
+
+html { overflow: scroll;
+}
+    
 header{
- display: flex; position: fixed; width: 100%; height: 100px; background-color: #CAFF99; top: 0px; left: 0px;
+ display: flex; position: fixed; width: 2000px; height: 100px; background-color: #CAFF99; top: 0px; left: 0px;
  align-items : center;
 }
 
@@ -19,13 +23,53 @@ footer{
  align-items : center; justify-content: center;
 }
 
+#menu{
+    display: inline-block; width: 100%; height: 100%; background-color: lightcyan; top : 100px; left: 0px;
+    margin-left: 3%; position: relative;
+}
+
+div > h3{
+    margin-left: 2%;
+}
+
+div > img {
+    padding: 0 10px 0 10px;  width : 300px; height : 227px; 
+}
+
+.scroll{
+    display: flex;
+} 
+
 </style>
 
-
 <body>
+    
     <header>
          <img src = "images/로고.png">
     </header>
+
+    <div id="menu">
+
+        <!-- 배경색은 구분용-->
+        <h3>프랜차이즈</h3>
+        <div class="scroll">
+            <img src ="images/쇼토_딸기쇼트케이크.JPG">
+            <img src ="images/쇼토_딸기쇼트케이크.JPG">
+            <img src ="images/쇼토_딸기쇼트케이크.JPG">
+            <img src ="images/쇼토_딸기쇼트케이크.JPG">
+            <img src ="images/쇼토_딸기쇼트케이크.JPG">
+        </div>
+
+        <h3>개인</h3>
+        <div class="scroll">
+            <img src ="images/쇼토_딸기쇼트케이크.JPG">
+            <img src ="images/쇼토_딸기쇼트케이크.JPG">
+            <img src ="images/쇼토_딸기쇼트케이크.JPG">
+            <img src ="images/쇼토_딸기쇼트케이크.JPG">
+            <img src ="images/쇼토_딸기쇼트케이크.JPG">
+        </div>
+
+    </div>
 
     <footer>
             <img src = "images/footer.png">
